@@ -3,43 +3,36 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>aplikasi menghitung rumus FISIKA DASAR</title>
-    <link rel="stylesheet" href="./assets/style/main.css" />
+    <link rel="stylesheet" href="./assets/style/loading.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 style="text-align: center; color: rgb(75,207,196)">
-        KALKULATOR FISIKA DASAR
-      </h1>
-      <section>
-        <!-- <form id="searchForm"> -->
-        <h1><div class="inputFieldDiv">
-          <input
-            type="text"
-            id="myInput"
-            name="searchInput"
-            placeholder="Cari Formula..."
-          />
+    <div class="logo">
+    </div>
+    <figure>
+        <img src="./assets/logo.gif">
+    </figure>
+    <div class="loading-area">
+        <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <!-- <button id="searchBtn" type="submit">Search</button> -->
-        <!-- </form> -->
-       <table
-        id="myTable" 
-         align="center"
-         style="border-color: rgba(200, 122, 67, 0.837)"
-         border="1"
-         cellpadding="10">
-         <thead style="color: rgb(128, 87, 10); background-color: rgb(255,187,100);">
-            <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Formula</th>
-            <th>Aksi</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-       </table>
-      </section>
-    </div></h1>
-    <script src="./assets/js/main.js"></script>
-  </body>
+       <!----><script>
+          window.onload = function() {
+            let loader = document.getElementsByClassName("loader")[0];
+            let loading = document.createElement("div");
+            loading.textContent = " ";
+            setTimeout(() => {
+            loader.parentNode.removeChild(loader);
+            window.location.href = "beranda.html";
+    },4000);
+}
+        </script>
+        
+    </div>
+</body>
 </html>
